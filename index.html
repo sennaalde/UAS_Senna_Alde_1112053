@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet"
+        />
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="page1" data-theme="c" data-title="Workshop Activity Moodle">
+            <div data-role="header" data-theme="e">
+                <h1>Workshop Activity Moodle</h1>
+            </div>
+            <div data-role="content">
+                <img id="moodle" src="images/moodle logo-4045x1000.jpg" width="200" style="display: block; margin: 0 auto"
+                />
+                <h2 id="teks1">Tutorial Moodle Activity Workshop</h2>
+                <span>Selamat Datang di Mobile Learning Tutorial Workshop Activity Moodle</span>
+                <span>, dalam Mobile Learning ini akan dijelaskan bagaimana cara membuat serta menggunakan
+                    Moodle Activity Workshop</span>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" id="Home" href="#page1" data-transition="flip" data-icon="home"
+                            data-theme="e">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="menu" href="#page2" data-transition="flow" data-icon="grid"
+                            data-theme="e">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="info" href="#page8" data-transition="flip" data-icon="info"
+                            data-theme="e">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page2" data-theme="e" data-title="Menu">
+            <div data-role="header" data-theme="e">
+                <h1>Menu</h1>
+                <a data-role="button" data-rel="back" data-icon="arrow-l" data-theme="e">Back</a>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li data-theme="e">
+                        <a href="#page3"><img src="images/key.png" /> Pendahuluan</a>
+                    </li>
+                    <li>
+                        <a href="#page4"><img src="images/pen.png" /> Tutorial Membuat Moodle</a>
+                    </li>
+                    <li>
+                        <a href="#page7"><img src="images/gal.png" /> Metode Kalkulasi Penilaian</a>
+                    </li>
+                    <li>
+                        <a href="#page9"><img src="images/dv.PNG" /> Video Tutorial</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" id="Home" href="#page1" data-transition="flip" data-icon="home"
+                            data-theme="e">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="menu" href="#page2" data-transition="flow" data-icon="grid"
+                            data-theme="e">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="info" href="#page8" data-transition="flip" data-icon="info"
+                            data-theme="e">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page3" data-theme="e" data-title="Workshop Activity Moodle">
+            <div data-role="header" data-theme="e">
+                <h1>Pendahuluan</h1>
+                <a data-role="button" data-rel="back" data-icon="arrow-l" data-theme="e">Back</a>
+            </div>
+            <div data-role="content">
+                <h2 id="teks1">Pendahuluan</h2>
+                <form action="http://" method="POST">
+                    <span>Workshop adalah kegiatan penilaian antar teman dengan banyak pilihan. Siswa menyerahkan
+                        pekerjaan mereka melalui alat teks online dan lampiran. Ada dua nilai untuk siswa:
+                        pekerjaan mereka sendiri dan penilaian rekan kerja mereka siswa lainnya '. Modul
+                        Workshop memungkinkan pengumpulan, review dan rekan penilaian karya siswa. Siswa
+                        dapat mengirimkan konten digital (file), seperti dokumen word atau spreadsheet dan
+                        juga dapat mengetik teks langsung dengan menggunakan editor teks. Kiriman yang dinilai
+                        menggunakan bentuk penilaian multi-kriteria yang ditetapkan oleh guru. Proses penilaian
+                        antar teman dan memahami bentuk penilaian dapat dilakukan terlebih dahulu dengan
+                        contoh pengajuan yang diberikan oleh guru, bersama-sama dengan penilaian acuan. Siswa
+                        diberi kesempatan untuk menilai satu atau lebih dari kiriman rekan-rekan mereka.
+                        Siswa memperoleh dua kelas dalam Workshop, kelas untuk pengajuan dan kelas untuk
+                        penilaian mereka dari kiriman rekan-rekan mereka '. Kedua nilai dicatat dalam gradebook.
+                        Workshop ini mirip dengan modul Tugas dan meluas fungsinya dalam banyak cara. Namun,
+                        dianjurkan bahwa kedua fasilitator saja (guru) dan peserta kursus (siswa) memiliki
+                        setidaknya beberapa pengalaman dengan modul Tugas sebelum Workshop digunakan dalam
+                        kursus. Seperti dalam Penugasan ini, peserta kursus menyerahkan pekerjaan mereka
+                        selama kegiatan Workshop. Setiap peserta kursus menyampaikan karya mereka sendiri.
+                        Pengajuan dapat terdiri dari teks dan lampiran. Oleh karena itu, pengajuan Workshop
+                        menggabungkan teks online dan Upload jenis file dari modul Penugasan. Dukungan untuk
+                        kerja tim (dalam arti satu pengajuan per kelompok peserta) adalah keluar dari lingkup
+                        modul Workshop. Kiriman yang dinilai menggunakan bentuk penilaian terstruktur yang
+                        didefinisikan oleh fasilitator saja (guru). Workshop mendukung beberapa jenis bentuk
+                        penilaian. Semua dari mereka memungkinkan penilaian multi-kriteria dibandingkan dengan
+                        modul Penugasan di mana hanya satu kelas diberikan kepada submisi.</span>
+                </form>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" id="Home" href="#page1" data-transition="flip" data-icon="home"
+                            data-theme="e">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="menu" href="#page2" data-transition="flow" data-icon="grid"
+                            data-theme="e">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="info" href="#page8" data-transition="flip" data-icon="info"
+                            data-theme="e">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page4" data-theme="e" data-title="Tutorial">
+            <div data-role="header" data-theme="e">
+                <h1>Tutorial</h1>
+                <a data-role="button" data-rel="back" data-icon="arrow-l" data-theme="e"
+                data-corners="false">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Tutorial Membuat Kelas Activity Workshop</h2>
+                <form action="http://" method="POST">
+                    <span>1. Dengan menghidupkan mode editing, di bagian yang ingin Anda tambahkan Workshop
+                        Anda, klik "Add an activity or Resource" link dan pilih Workshop. Semua pengaturan
+                        dapat diperluas dengan mengklik "Expand All" di link kanan atas.</span>
+                    <div class="div-widget">
+                        <span>2. Isi form Workshop sesuai dengan kriteria yang akan ditentukan. Kriteria ini diisikan
+                            oleh guru yang akan membuka Workshop</span>
+                        <div class="div-widget">
+                            <span>3. Centang kotak Late Submission, ini diperlukan untuk memungkinkan siswa menyerahkan
+                                setelah batas waktu. Setiap pengajuan akhir tidak dapat diedit oleh siswa, mereka
+                                hanya memiliki satu kesempatan untuk mengajukan. Jika pengiriman terlambat diperbolehkan,
+                                tidak ada cara untuk secara otomatis mengalokasikan penilai kepada mereka. Guru perlu
+                                secara manual mengalokasikan penilai untuk pengiriman terlambat.</span>
+                        </div>
+                        <div class="div-widget">
+                            <span>4. Siswa melihat petunjuk ini saat Workshop ini dalam Tahap Penilaian. Petunjuk
+                                ini penting untuk siswa dalam pemahaman tentang tugas sebelum menilai kiriman dari
+                                teman sekelas mereka.</span>
+                        </div>
+                    </div>
+                    <a data-role="button" href="#page5" data-icon="arrow-r" data-theme="e">Next Page</a>
+                </form>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" id="Home" href="#page1" data-transition="flip" data-icon="home"
+                            data-theme="e">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="menu" href="#page2" data-transition="flow" data-icon="grid"
+                            data-theme="e">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="info" href="#page8" data-transition="flip" data-icon="info"
+                            data-theme="e">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page5" data-theme="e" data-title="Workshop Activity Moodle">
+            <div data-role="header" data-theme="e">
+                <h1>Tutorial</h1>
+                <a data-role="button" data-rel="back" data-transition="turn" data-icon="arrow-l"
+                data-theme="e">Back</a>
+            </div>
+            <div data-role="content">
+                <form action="http://" method="POST">
+                    <span>Setelah pengaturan Workshop ini telah disimpan, Guru dapat mengakses pengaturan
+                        lebih lanjut yang berkaitan dengan penilaian mengalokasikan.</span>
+                </form>
+                <div class="div-widget">
+                    <span>5. Setelah mengisi kriteria yang dibuat klik save and display Dalam rangka untuk
+                        mengatur kriteria untuk tugas, guru perlu mengisi formulir penilaian selama fase
+                        setup. (Jika Anda ingin siswa untuk dapat melihat formulir ini ketika mereka mengirimkan
+                        maka Anda perlu menyertakan contoh pengajuan.) Pada tahap-tahap penilaian berikutnya,
+                        siswa akan menilai pekerjaan rekan-rekan mereka 'berdasarkan bentuk penilaian ini.
+                        Menurut Grading Strategy yang dipilih dalam pengaturan grading, guru akan mendapatkan
+                        yang sesuai bentuk penilaian awal untuk mengedit dengan mengklik tombol 'Edit assessment
+                        form' di halaman pertama dari setup Workshop untuk tugas. Grading Strategy dapat
+                        menjadi salah satu penilaian Kumulatif, Komentar, Jumlah kesalahan atau Rubrik. Guru
+                        dapat mengatur setiap kriteria secara rinci dalam bentuk penilaian.</span>
+                    <div class="div-widget">
+                        <span>6. Setelah workshop telah dibuat, kita kemudian dapat mengatur pengaturan yang berkaitan
+                            dengan pengiriman. Hal ini dilakukan melalui mengklik menu yang disorot di bawah
+                            yang ditemukan ketika Anda klik pada link workshop atau setelah mengklik "Save And
+                            Display" pada penyelesaian Workshop. Untuk mengakses menu cukup klik pada "Allocate
+                            Submissions". Hal ini disorot pada gambar dengan kotak merah.</span>
+                        <img src="images/submission_advanced.jpg"
+                        width="300" />
+                        <a data-role="button" href="#page6">Pengaturan Untuk Guru</a>
+                        <a data-role="button" href="#page7">Kalkulasi Penilaian</a>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" id="Home" href="#page1" data-transition="flip" data-icon="home"
+                            data-theme="e">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="menu" href="#page2" data-transition="flow" data-icon="grid"
+                            data-theme="e">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="info" href="#page8" data-transition="flip" data-icon="info"
+                            data-theme="e">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page6" data-theme="e" data-title="Workshop Activity Moodle">
+            <div data-role="header" data-theme="e">
+                <h1>Pengaturan Guru</h1>
+                <a data-role="button" data-rel="back" data-transition="fade"
+                data-icon="arrow-l" data-theme="e">Back</a>
+            </div>
+            <div data-role="content">
+                <form action="http://" method="POST">
+                    <span>Guru diberikan 5 pengaturan yang menentukan bagaimana alokasi random akan bekerja.</span>
+                </form>
+                <div class="div-widget">
+                    <span>1. Jumlah ulasan: Berikut guru mengambil antara 0 dan 30 ulasan untuk baik setiap
+                        pengiriman atau per resensi. Itulah guru dapat memilih untuk mengatur jumlah tinjauan
+                        setiap pengiriman harus memiliki atau jumlah tinjauan setiap siswa harus melaksanakan</span>
+                    <div
+                    class="div-widget">
+                        <span>2. Mencegah Ulasan: Jika guru ingin untuk siswa dari kelompok yang sama untuk tidak
+                            pernah meninjau pekerjaan satu sama lain, karena kemungkinan besar itu adalah pekerjaan
+                            mereka terlalu dalam pengajuan kelompok, maka mereka dapat memeriksa kotak ini dan
+                            moodle akan memastikan bahwa mereka hanya dialokasikan siswa lain dari kerja kelompok
+                            mereka untuk mengakses</span>
+                        <div class="div-widget">
+                            <span>3. Hapus alokasi saat ini: Memeriksa kotak ini berarti bahwa setiap alokasi manual
+                                yang telah ditetapkan dalam menu Alokasi manual akan dihapus</span>
+                            <div class="div-widget">
+                                <span>4. Dapat mengakses tanpa pengajuan: Memiliki kotak ini diperiksa memungkinkan siswa
+                                    untuk menilai pekerjaan siswa lain 'tanpa sudah disampaikan pekerjaan mereka sendiri.</span>
+                                <div
+                                class="div-widget">
+                                    <span>5. Tambahkan penilaian diri: Pilihan ini ketika diperiksa memastikan bahwa serta
+                                        menilai karya siswa lain mereka juga harus menilai sendiri. Ini adalah pilihan yang
+                                        baik untuk mengajar siswa bagaimana menjadi tujuan untuk pekerjaan mereka sendiri.</span>
+                            </div>
+                            <a data-role="button" href="#page5">Tutotial Cara Membuat Workshop</a>
+                            <a data-role="button" href="#page7">Kalkulasi Penilaian</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-role="button" id="Home" href="#page1" data-transition="flip" data-icon="home"
+                        data-theme="e">Home</a>
+                    </li>
+                    <li>
+                        <a data-role="button" id="menu" href="#page2" data-transition="flow" data-icon="grid"
+                        data-theme="e">Menu</a>
+                    </li>
+                    <li>
+                        <a data-role="button" id="info" href="#page8" data-transition="flip" data-icon="info"
+                        data-theme="e">Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div data-role="page" id="page7" data-theme="e" data-title="Workshop Activity Moodle">
+            <div data-role="header" data-theme="e">
+                <h1>Kalkulasi Penilaian</h1>
+                <a data-role="button" data-rel="back" data-icon="arrow-l"
+                data-theme="e">Back</a>
+            </div>
+            <div data-role="content">
+                <form action="http://" method="POST">
+                    <span>Pengaturan ini menentukan bagaimana menghitung kelas untuk penilaian. Saat ini hanya
+                        ada satu perbandingan pilihan-dengan penilaian terbaik. Perbandingan dengan penilaian
+                        terbaik mencoba untuk membayangkan seperti apa penilaian yang benar-benar adil.</span>
+                    <div
+                    class="div-widget">
+                        <span>Sebagai contoh, seorang guru menggunakan Jumlah kesalahan sebagai strategi penilaian
+                            satu tugas. Strategi ini menggunakan beberapa pernyataan dan penilai hanya perlu
+                            memeriksa apakah pernyataan yang diberikan lulus atau gagal. Artinya, mereka hanya
+                            perlu memilih 'ya' atau 'tidak' untuk setiap kriteria dalam bentuk penilaian. Dalam
+                            hal ini, ada tiga penilai, Alice, Bob dan Cindy. Dan bentuk penilaian mengandung
+                            tiga kriteria. Penulis akan mendapatkan 100% kelas jika semua kriteria yang lulus,
+                            75% jika dua kriteria lulus, 25% jika hanya satu kriteria dilewatkan dan 0% jika
+                            penilai memberikan 'tidak' untuk ketiga pernyataan. Berikut adalah penilaian mereka
+                            berikan kepada satu pekerjaan tertentu:</span>
+                        <div class="div-widget">
+                            <span>Alice: yes/yes/no</span>
+                        </div>
+                        <div class="div-widget">
+                            <span>Bob: yes/yes/no</span>
+                        </div>
+                        <div class="div-widget">
+                            <span>Cindy: no/yes/yes</span>
+                        </div>
+                        <div class="div-widget">
+                            <span>Kedua, workshop akan memberikan yang terbaik penilaian. Berikutnya akan mengukur
+                                'jarak' dari penilaian lain untuk penilaian terbaik ini. Semakin jauh jarak, kelas
+                                rendah penilaian akan menerima. Dan Perbandingan penilaian pengaturan, sebelah setelan
+                                evaluasi kelas, akan menentukan seberapa cepat kelas jatuh jika penilaian berbeda
+                                dari yang terbaik.</span>
+                            <a data-role="button" href="#page6">Pengaturan Guru</a>
+                            <a data-role="button" href="#page5">Tutorial</a>
+                        </div>
+            </div>
+            </form>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a data-role="button" id="Home" href="#page1" data-transition="flip" data-icon="home"
+                        data-theme="e">Home</a>
+                    </li>
+                    <li>
+                        <a data-role="button" id="menu" href="#page2" data-transition="flow" data-icon="grid"
+                        data-theme="e">Menu</a>
+                    </li>
+                    <li>
+                        <a data-role="button" id="info" href="#page8" data-transition="flip" data-icon="info"
+                        data-theme="e">Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div data-role="dialog" id="page8" data-theme="e">
+            <div data-role="header" data-theme="e">
+                <h1>Info Contact</h1>
+            </div>
+            <div data-role="content">
+                <div class="div-widget">
+                    <img id="image" src="images/IMG_6460.JPG" width="300" />
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <span>Nama :</span>
+                    </div>
+                    <div class="ui-block-b">
+                        <span>Senna Alde Setiawan</span>
+                    </div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <span>NIM :</span>
+                    </div>
+                    <div class="ui-block-b">
+                        <span>1112053</span>
+                    </div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <span>Kelas</span>
+                    </div>
+                    <div class="ui-block-b">
+                        <span>TI 4.1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page9" data-theme="e" data-title="Workshop Activity Moodle">
+            <div data-role="header" data-theme="e">
+                <h1>Tutorial</h1>
+                <a data-role="button" data-rel="back" data-transition="turn" data-icon="arrow-l"
+                data-theme="e">Back</a>
+            </div>
+            <div data-role="content">
+                <div class="div-widget">
+                    <span>Untuk lebih jelas tentang cara pembuatan dan cara penggunaan Moodle Activity Workshop
+                        akan dijelaskan pada video ini</span>
+                       <iframe width="854" height="480" src="https://www.youtube.com/embed/mF23Dc4DDiw" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" id="Home" href="#page1" data-transition="flip" data-icon="home"
+                            data-theme="e">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="menu" href="#page2" data-transition="flow" data-icon="grid"
+                            data-theme="e">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" id="info" href="#page8" data-transition="flip" data-icon="info"
+                            data-theme="e">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
